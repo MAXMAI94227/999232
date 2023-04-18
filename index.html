@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 32.0px; font: 16.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p2"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;title&gt;輸入指定編號顯示圖片&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;style&gt;</span></p>
+<p class="p1"><span class="s1">                img {</span></p>
+<p class="p1"><span class="s1">                        max-width: 100%;</span></p>
+<p class="p1"><span class="s1">                        height: auto;</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p1"><span class="s1">        &lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;label for="inputNumber"&gt;請輸入編號:&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;input type="text" id="inputNumber"&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;button onclick="showImage()"&gt;顯示圖片&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"> </span></p>
+<p class="p1"><span class="s1">        &lt;script&gt;</span></p>
+<p class="p1"><span class="s1">                function showImage() {</span></p>
+<p class="p1"><span class="s1">                        var number = document.getElementById("inputNumber").value;</span></p>
+<p class="p1"><span class="s1">                        var imageUrl = number + ".jpg"; // 將圖片放置在與 HTML 檔案相同的目錄下</span></p>
+<p class="p1"><span class="s1">                        window.open(imageUrl, "_blank", "width=800,height=600");</span></p>
+<p class="p1"><span class="s1">                }</span></p>
+<p class="p1"><span class="s1">        &lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
